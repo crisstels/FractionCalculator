@@ -11,8 +11,6 @@ namespace FractionCalculator
             Fraction fraction2 = new Fraction(1,2);
 
             result.Allocation(fraction1.Addition(fraction2));
-            result.Allocation(result.shorten());
-            Console.Write(result);
             Console.ReadKey(true);
         }
     }

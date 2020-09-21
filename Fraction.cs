@@ -83,18 +83,7 @@ namespace FractionCalculator
         }
             return counter;
      }
-    /* Shortens a fraction*/
-     public Fraction shorten()
-     {
-         Fraction fraction = new Fraction();
-         int gcf = Euklid(this.Counter, this.Denominator);
-         fraction.Counter = this.Counter / gcf;
-         fraction.Denominator = this.Denominator/ gcf;
-
-         Console.WriteLine(fraction.Counter);
-         Console.WriteLine(fraction.Denominator);
-
-         return fraction;
-     }
+    /* Shortens a fraction. TODO: implement this */
+     public Fraction shorten(){}
     }
 }
