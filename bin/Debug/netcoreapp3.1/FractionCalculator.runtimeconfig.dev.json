@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/teraadmin/.dotnet/store/|arch|/|tfm|",
+      "/Users/teraadmin/.nuget/packages"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+/Users/teraadmin/Documents/Fraction/FractionCalculator/bin/Debug/netcoreapp3.1/FractionCalculator.deps.json
+/Users/teraadmin/Documents/Fraction/FractionCalculator/bin/Debug/netcoreapp3.1/FractionCalculator.runtimeconfig.json
+/Users/teraadmin/Documents/Fraction/FractionCalculator/bin/Debug/netcoreapp3.1/FractionCalculator.runtimeconfig.dev.json
+/Users/teraadmin/Documents/Fraction/FractionCalculator/bin/Debug/netcoreapp3.1/FractionCalculator.dll
+/Users/teraadmin/Documents/Fraction/FractionCalculator/bin/Debug/netcoreapp3.1/FractionCalculator.pdb
+/Users/teraadmin/Documents/Fraction/FractionCalculator/obj/Debug/netcoreapp3.1/FractionCalculator.csprojAssemblyReference.cache
+/Users/teraadmin/Documents/Fraction/FractionCalculator/obj/Debug/netcoreapp3.1/FractionCalculator.csproj.CoreCompileInputs.cache
+/Users/teraadmin/Documents/Fraction/FractionCalculator/obj/Debug/netcoreapp3.1/FractionCalculator.AssemblyInfoInputs.cache
+/Users/teraadmin/Documents/Fraction/FractionCalculator/obj/Debug/netcoreapp3.1/FractionCalculator.AssemblyInfo.cs
+/Users/teraadmin/Documents/Fraction/FractionCalculator/obj/Debug/netcoreapp3.1/FractionCalculator.dll
+/Users/teraadmin/Documents/Fraction/FractionCalculator/obj/Debug/netcoreapp3.1/FractionCalculator.pdb
+/Users/teraadmin/Documents/Fraction/FractionCalculator/obj/Debug/netcoreapp3.1/FractionCalculator.genruntimeconfig.cache
