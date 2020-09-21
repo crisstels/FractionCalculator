@@ -61,7 +61,7 @@ namespace FractionCalculator
          return result;
      }
      /* Detects the greatest common factor */
-     public int Euklid(int counter, int denominator)
+     private int Euklid(int counter, int denominator)
      {
         if (Counter == 0)
         {
@@ -84,6 +84,6 @@ namespace FractionCalculator
             return counter;
      }
     /* Shortens a fraction. TODO: implement this */
-     public Fraction shorten(){}
+     private Fraction shorten(){}
     }
 }
