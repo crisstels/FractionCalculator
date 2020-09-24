@@ -77,13 +77,25 @@ namespace FractionCalculator
                 }
                 else
                 {
-                    counter -= denominator;
+                    denominator -= counter;
                 }
             }
         }
             return counter;
      }
     /* Shortens a fraction. TODO: implement this */
-     private Fraction shorten(){}
+     public Fraction shorten(Fraction fraction)
+     { 
+         Fraction result = new Fraction();
+         int gfc = Euklid(fraction.Counter, fraction.Denominator);
+         result.Counter = fraction.Counter / gfc;
+         result.Denominator = fraction.Denominator / gfc;
+
+         Console.WriteLine(result.Counter);
+         Console.WriteLine(result.Denominator);
+
+         return result;
+
+     }
     }
 }
