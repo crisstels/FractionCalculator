@@ -1,12 +1,27 @@
+/* Autor: Natalie Hasselmann
+*  Klasse: IA219
+*  Dateiname: Fraction.cs
+*  Datum: 16.09.2020
++  Beschreibung: Bildet einen math. Bruch ab
+*  Aenderungen: 24.09.2020 kuerzen-Methode wurde hinzugefügt & Anpassung der Klasse an den Style-Guide
+*/
 using System;
 
 namespace FractionCalculator
 {
     class Fraction
     {
-     private int Denominator { get; set; }
-     private int Counter { get; set; }
+    #region Eigenschaften/Properties
+     private int _counter;
+     private int _denominator;
+    #endregion
 
+    # region Acessors/Modifiers
+    private int Counter { get => _counter; set => _counter = value; }
+    private int Denominator { get => _denominator; set => _denominator = value; }
+    # endregion
+
+    # region Constructor
      public Fraction()
      {
          this.Denominator = 1;
@@ -18,6 +33,9 @@ namespace FractionCalculator
          this.Denominator = denominator;
          this.Counter = counter;
      }
+     # endregion
+
+     # region Worker
      /* Methods for calculating.*/
      public Fraction Addition(Fraction fraction)
      {
@@ -83,7 +101,7 @@ namespace FractionCalculator
         }
             return counter;
      }
-    /* Shortens a fraction. TODO: implement this */
+    /* Shortens a fraction. */
      public Fraction shorten(Fraction fraction)
      { 
          Fraction result = new Fraction();
@@ -97,5 +115,6 @@ namespace FractionCalculator
          return result;
 
      }
+     # endregion
     }
 }
