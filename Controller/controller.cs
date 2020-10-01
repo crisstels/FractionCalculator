@@ -16,10 +16,36 @@ namespace FractionCalculator
         #endregion
 
         #region Worker
-        public Fraction AddFractions(){
+        public Fraction AddFractions()
+        {
             fraction = userInterface.getFraction();
             fraction2 = userInterface.getFraction();
-            result.Allocation(fraction.Addition(fraction2));
+            result = result.Allocation(fraction.Addition(fraction2));
+
+            return result;
+        }
+        public Fraction SubtractFractions()
+        {
+            fraction = userInterface.getFraction();
+            fraction2 = userInterface.getFraction();
+            result = result.Allocation(fraction.Subtraction(fraction2));
+
+            return result;
+        }
+        public Fraction MultipleFractions()
+        {
+            fraction = userInterface.getFraction();
+            fraction2 = userInterface.getFraction();
+            result = result.Allocation(fraction.Multiplication(fraction2));
+
+            return result;
+        }
+        public Fraction DivideFractions()
+        {
+            fraction = userInterface.getFraction();
+            fraction2 = userInterface.getFraction();
+            result = result.Allocation(fraction.Division(fraction2));
+
             return result;
         }
         #endregion
