@@ -12,15 +12,15 @@ namespace FractionCalculator
     class Fraction
     {
     #region Eigenschaften/Properties
-     private int _counter;
-     private int _denominator;
+     private int counter;
+     private int denominator;
     #endregion
 
     # region Acessors/Modifiers
-    private int Counter { get => _counter; set => _counter = value; }
-    private int Denominator { get => _denominator; set => _denominator = value; }
+    public int Counter { get => counter; set => counter = value; }
+    public int Denominator { get => denominator; set => denominator = value; }
     # endregion
-
+    
     # region Constructor
      public Fraction()
      {
