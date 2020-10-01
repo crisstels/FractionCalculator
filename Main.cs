@@ -13,18 +13,9 @@ namespace FractionCalculator
     {
         static void Main(string[] args)
         {
-            # region Central Data
-            Fraction result = new Fraction();
-            Fraction fraction1 = new Fraction(3,4);
-            Fraction fraction2 = new Fraction(1,2);
-            # endregion
-
-            # region Call Methods
-            result.Allocation(fraction1.Addition(fraction2));
-            result.shorten(result);
-            # endregion
+            Controller controller = new Controller();
+            controller.run();
             
-            Console.ReadKey(true);
         }
     }
 }

@@ -20,12 +20,12 @@ namespace FractionCalculator
     public int Counter { get => counter; set => counter = value; }
     public int Denominator { get => denominator; set => denominator = value; }
     # endregion
-    
+
     # region Constructor
      public Fraction()
      {
          this.Denominator = 1;
-         this.Counter = 1;
+         this.Counter = 0;
      }
 
      public Fraction(int counter, int denominator)
@@ -40,7 +40,7 @@ namespace FractionCalculator
      public Fraction Addition(Fraction fraction)
      {
          Fraction result = new Fraction();
-         result.Counter = this.Counter * fraction.Denominator+ this.Denominator *fraction.Counter;
+         result.Counter = this.Counter * fraction.Denominator + this.Denominator * fraction.Counter;
          result.Denominator = this.Denominator * fraction.Denominator;
          return result;
      }

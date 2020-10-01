@@ -11,7 +11,7 @@ namespace FractionCalculator
     class UserInterface {
 
         #region Eigenschaften/Properties
-        private Fraction fraction;
+        private Fraction fraction = new Fraction();
         #endregion
 
         #region Methods
@@ -35,12 +35,12 @@ namespace FractionCalculator
         // Prints the Menu for choosing one operation
         public int Menu()
         {
-            Console.WriteLine("Welche Operation möchten Sie ausführen? Drücken Sie die");
-            Console.WriteLine("1 für Addition (+)");
-            Console.WriteLine("2 für Subtraktion (-)");
-            Console.WriteLine("3 für Multiplikation (*)");
-            Console.WriteLine("4 für Division (/)");
-            Console.WriteLine("5 um das Programm zu beenden" + "\n");
+            Console.WriteLine("Please choose an operation");
+            Console.WriteLine("1 for Addittion (+)");
+            Console.WriteLine("2 for Subtraction (-)");
+            Console.WriteLine("3 for Multiplication (*)");
+            Console.WriteLine("4 for Division (/)");
+            Console.WriteLine("5 to exit the programm" + "\n");
             int op = Convert.ToInt32(Console.ReadLine());
 
             return op;
@@ -50,7 +50,7 @@ namespace FractionCalculator
         {
             Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" + "\n");
             Console.WriteLine("Titel: Bruchrechner");
-            Console.WriteLine("Beschreibung: Einfacher Bruchrechner, welcher 2 Brüche miteinander verrechnet und das Ergebnis kürzt.");
+            Console.WriteLine("Beschreibung: Einfacher objektorientierter Bruchrechner, welcher 2 Brüche miteinander verrechnet und das Ergebnis kürzt.");
             Console.WriteLine("Autor: Natalie Hasselmann  ʕ•ᴥ•ʔ");
             Console.WriteLine("\n" + "Drücken Sie eine beliebige Taste zum fortfahren" + "\n");
             Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" + "\n");
