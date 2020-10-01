@@ -5,7 +5,6 @@
 //  Beschreibung: Schnittstelle zwischen User und Programm
 //  Aenderungen:
 using System;
-using Fraction;
 
 namespace FractionCalculator
 {
