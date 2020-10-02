@@ -42,7 +42,7 @@ namespace FractionCalculator
          Fraction result = new Fraction();
          result.Counter = this.Counter * fraction.Denominator + this.Denominator * fraction.Counter;
          result.Denominator = this.Denominator * fraction.Denominator;
-         return result;
+         return result.Reduced();
      }
 
      public Fraction Subtraction(Fraction fraction)
@@ -50,7 +50,7 @@ namespace FractionCalculator
          Fraction result = new Fraction();
          result.Counter = this.Counter * fraction.Denominator - this.Denominator * fraction.Counter;
          result.Denominator = this.Denominator * fraction.Denominator;
-         return result;
+         return result.Reduced();
      }
 
      public Fraction Multiplication(Fraction fraction)
@@ -58,7 +58,7 @@ namespace FractionCalculator
          Fraction result = new Fraction();
          result.Counter= this.Counter * fraction.Counter;
          result.Denominator = this.Denominator * fraction.Denominator;
-         return result;
+         return result.Reduced();
      }
 
      public Fraction Division(Fraction fraction)
@@ -66,7 +66,7 @@ namespace FractionCalculator
          Fraction result = new Fraction();
          result.Counter = this.Counter * fraction.Denominator;
          result.Denominator = this.Denominator * fraction.Counter;
-         return result;
+         return result.Reduced();
      }
     /* Allocates result */
      public Fraction Allocation(Fraction fraction)
@@ -74,8 +74,8 @@ namespace FractionCalculator
          Fraction result = new Fraction();
          this.Counter = result.Counter = fraction.Counter;
          this.Denominator = result.Denominator = fraction.Denominator;
-         result.shorten(result);
-         return result;
+         result = result.Reduced();
+         return result.Reduced();
      }
      /* Detects the greatest common factor */
      private int Euklid(int counter, int denominator)
@@ -101,18 +101,14 @@ namespace FractionCalculator
             return counter;
      }
     /* Shortens a fraction. */
-     private Fraction shorten(Fraction fraction)
+     private Fraction Reduced()
      { 
          Fraction result = new Fraction();
-         int gfc = Euklid(fraction.Counter, fraction.Denominator);
-         result.Counter = fraction.Counter / gfc;
-         result.Denominator = fraction.Denominator / gfc;
-
-         Console.WriteLine(result.Counter);
-         Console.WriteLine(result.Denominator);
+         int gfc = Euklid(Counter, Denominator);
+         result.Counter = Counter / gfc;
+         result.Denominator = Denominator / gfc;
 
          return result;
-
      }
      # endregion
     }
