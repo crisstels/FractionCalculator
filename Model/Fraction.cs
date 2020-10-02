@@ -74,8 +74,7 @@ namespace FractionCalculator
          Fraction result = new Fraction();
          this.Counter = result.Counter = fraction.Counter;
          this.Denominator = result.Denominator = fraction.Denominator;
-         Console.WriteLine(result.Counter);
-         Console.WriteLine(result.Denominator);
+         result.shorten(result);
          return result;
      }
      /* Detects the greatest common factor */
@@ -102,7 +101,7 @@ namespace FractionCalculator
             return counter;
      }
     /* Shortens a fraction. */
-     public Fraction shorten(Fraction fraction)
+     private Fraction shorten(Fraction fraction)
      { 
          Fraction result = new Fraction();
          int gfc = Euklid(fraction.Counter, fraction.Denominator);

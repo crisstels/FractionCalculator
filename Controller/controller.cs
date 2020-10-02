@@ -10,23 +10,19 @@ namespace FractionCalculator
 {
     class Controller
     {
-        #region Eigenschaften/Prpoerties
-        private UserInterface userInterface;
+        #region Eigenschaften/Properties
+        private UserInterface userInterface = new UserInterface();
         private Fraction fraction;
         private Fraction fraction2;
-        private Fraction result;
+        private Fraction result = new Fraction();
         #endregion
 
         #region Worker
         public Fraction AddFractions()
         {
-            fraction = new Fraction();
-            fraction2 = new Fraction();
-            result = new Fraction();
-            userInterface = new UserInterface();
             fraction = userInterface.getFraction();
             fraction2 = userInterface.getFraction();
-            result = result.Allocation(fraction.Addition(fraction2));
+            result.Allocation(fraction.Addition(fraction2));
 
             return result;
         }
@@ -34,7 +30,7 @@ namespace FractionCalculator
         {
             fraction = userInterface.getFraction();
             fraction2 = userInterface.getFraction();
-            result = result.Allocation(fraction.Subtraction(fraction2));
+            result.Allocation(fraction.Subtraction(fraction2));
 
             return result;
         }
@@ -42,7 +38,7 @@ namespace FractionCalculator
         {
             fraction = userInterface.getFraction();
             fraction2 = userInterface.getFraction();
-            result = result.Allocation(fraction.Multiplication(fraction2));
+            result.Allocation(fraction.Multiplication(fraction2));
 
             return result;
         }
@@ -50,14 +46,13 @@ namespace FractionCalculator
         {
             fraction = userInterface.getFraction();
             fraction2 = userInterface.getFraction();
-            result = result.Allocation(fraction.Division(fraction2));
+            result.Allocation(fraction.Division(fraction2));
 
             return result;
         }
 
         public void run()
         {
-            UserInterface userInterface = new UserInterface();
             userInterface.Splash();
             while(true)
             {
@@ -88,9 +83,9 @@ namespace FractionCalculator
                     Console.WriteLine("Wrong operation");
                     break;
                 }
-                result = result.shorten(result);
 
                 userInterface.printFraction(result);
+                Console.ReadKey(true);
             }
 
         }

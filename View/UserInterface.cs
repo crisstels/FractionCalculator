@@ -18,9 +18,9 @@ namespace FractionCalculator
         // User sets one fraction
         public Fraction getFraction()
         {
-            Console.WriteLine("Please enter a counter: ");
+            Console.Write("Please enter a counter: ");
             int counter = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Please enter a denominator: ");
+            Console.Write("Please enter a denominator: ");
             int denominator = Convert.ToInt32(Console.ReadLine());
             Fraction fraction = new Fraction(counter, denominator);
 
