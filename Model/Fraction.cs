@@ -4,6 +4,7 @@
 *  Datum: 16.09.2020
 +  Beschreibung: Bildet einen math. Bruch ab
 *  Aenderungen: 24.09.2020 kuerzen-Methode wurde hinzugefügt & Anpassung der Klasse an den Style-Guide
+*               02.10.2020 Methoden wurden umbenannt
 */
 using System;
 
@@ -37,7 +38,7 @@ namespace FractionCalculator
 
      # region Worker
      /* Methods for calculating.*/
-     public Fraction Addition(Fraction fraction)
+     public Fraction Add(Fraction fraction)
      {
          Fraction result = new Fraction();
          result.Counter = this.Counter * fraction.Denominator + this.Denominator * fraction.Counter;
@@ -45,7 +46,7 @@ namespace FractionCalculator
          return result.Reduced();
      }
 
-     public Fraction Subtraction(Fraction fraction)
+     public Fraction Minus(Fraction fraction)
      {
          Fraction result = new Fraction();
          result.Counter = this.Counter * fraction.Denominator - this.Denominator * fraction.Counter;
@@ -53,7 +54,7 @@ namespace FractionCalculator
          return result.Reduced();
      }
 
-     public Fraction Multiplication(Fraction fraction)
+     public Fraction Multiply(Fraction fraction)
      {
          Fraction result = new Fraction();
          result.Counter= this.Counter * fraction.Counter;
@@ -61,7 +62,7 @@ namespace FractionCalculator
          return result.Reduced();
      }
 
-     public Fraction Division(Fraction fraction)
+     public Fraction Divide(Fraction fraction)
      {
          Fraction result = new Fraction();
          result.Counter = this.Counter * fraction.Denominator;
@@ -69,7 +70,7 @@ namespace FractionCalculator
          return result.Reduced();
      }
     /* Allocates result */
-     public Fraction Allocation(Fraction fraction)
+     public Fraction Allocate(Fraction fraction)
      {
          Fraction result = new Fraction();
          this.Counter = result.Counter = fraction.Counter;

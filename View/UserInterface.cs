@@ -3,7 +3,7 @@
 //  Dateiname: UserInterface.cs
 //  Datum: 30.09.2020
 //  Beschreibung: Schnittstelle zwischen User und Programm
-//  Aenderungen:
+//  Aenderungen: 02.10 Methoden wurden umbenannt
 using System;
 
 namespace FractionCalculator
@@ -11,7 +11,7 @@ namespace FractionCalculator
     class UserInterface {
 
         #region Eigenschaften/Properties
-        private Fraction fraction = new Fraction();
+        private Fraction fraction;
         #endregion
 
         #region Methods

@@ -3,7 +3,7 @@
 //  Dateiname: UserInterface.cs
 //  Datum: 01.10.2020
 //  Beschreibung: Steuert den Bruchrechner
-//  Aenderungen:
+//  Aenderungen: Run-Methode wurde verbessert, das Kürzen von Brüchen wurde hinzugefügt
 using System;
 
 namespace FractionCalculator
@@ -22,7 +22,7 @@ namespace FractionCalculator
         {
             fraction = userInterface.getFraction();
             fraction2 = userInterface.getFraction();
-            result.Allocation(fraction.Addition(fraction2));
+            result.Allocate(fraction.Add(fraction2));
 
             return result;
         }
@@ -30,7 +30,7 @@ namespace FractionCalculator
         {
             fraction = userInterface.getFraction();
             fraction2 = userInterface.getFraction();
-            result.Allocation(fraction.Subtraction(fraction2));
+            result.Allocate(fraction.Minus(fraction2));
 
             return result;
         }
@@ -38,7 +38,7 @@ namespace FractionCalculator
         {
             fraction = userInterface.getFraction();
             fraction2 = userInterface.getFraction();
-            result.Allocation(fraction.Multiplication(fraction2));
+            result.Allocate(fraction.Multiply(fraction2));
 
             return result;
         }
@@ -46,12 +46,12 @@ namespace FractionCalculator
         {
             fraction = userInterface.getFraction();
             fraction2 = userInterface.getFraction();
-            result.Allocation(fraction.Division(fraction2));
+            result.Allocate(fraction.Divide(fraction2));
 
             return result;
         }
 
-        public void run()
+        public void Run()
         {
             userInterface.Splash();
             while(true)
